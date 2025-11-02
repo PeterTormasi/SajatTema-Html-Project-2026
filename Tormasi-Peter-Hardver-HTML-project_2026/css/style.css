@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(180deg, #94c9ff, #0654a2);
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background-color: lightslategray;
+    width: 100%;
+    height: 100px;
+    font-size: 150%;
+    border-bottom: 1px dotted black;
+}
+
+#banner-content {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: black;
+}
+
+a:hover:not(#header-link) {
+    color: lightskyblue;
+}
+
+header a {
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0;
+}
+
+.container {
+    width: 1100px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#dialog {
+    float: left;
+    width: 47.5%;
+    background-color: lightslategray;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#dialog2 {
+    float: right;
+    width: 47.5%;
+    background-color: lightslategray;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#dialog img,
+#dialog2 img {
+    background-color: whitesmoke;
+    float: left;
+    width: 60%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#szoveg {
+    width: 38%;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    color: aliceblue;
+    font-size: 125%;
+    padding-left: 5px;
+}
+
+#name {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#description {
+    text-align: left;
+    width: 100%;
+    font-size: 80%;
+}
+
+.container2{
+    width: 1100px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    margin-top: 30px;
+    background-color: lightslategray;
+    border-radius: 10px;
+    width: 25%;
+    min-width: 250px;
+    height: 1000px;
+    border: 1px solid black;
+    float: left;
+}
+
+section {
+    margin-top: 30px;
+    border: 1px solid black;
+    background-color: lightslategray;
+    border-radius: 10px;
+    width: 70%;
+    min-width: 700px;
+    height: 1000px;
+    float: right;
+}
+
+article {
+    width: 90%;
+    height: 47.5%;
+    background-color: whitesmoke;
+    margin-top: 2.5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+article h2 {
+    text-align: center;
+    font-size: 300%;
+}
+
+article p {
+    text-align: justify;
+    font-size: 150%;
+    padding: 10px;
+}
+
+article img {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    margin-top: 60px;
+    background-color: lightslategray;
+    margin-bottom: 30px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    color: aliceblue;
+}
+
+#main-footer {
+    width: 50%;
+    min-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main-footer div {
+    float: left;
+    width: 33.33%;
+    margin-top: 15px;
+}
+
+#menu {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#menu li
+{
+    list-style-type: none;
+}
+
+#menu ul li a
+{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 3px;
+    display: block;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+#menu ul li a:hover
+{
+    background-color: deepskyblue;
+    color: white;
+}
+
+#menu ul ul a
+{
+    position: relative;
+    top: 100%;
+    background-color: lightgrey;
+    display: none;
+}
+
+#menu ul li:hover > ul a
+{
+    display: flex;
+}
+
+figure {
+    display: inline-flexbox;
+    float: left;
+}
+
+figure img {
+    width: 300px;
+    height: auto;
+}
+
+form {
+    text-align: left;
+    padding: 20px;
+    color: aliceblue;
+}
+
+form fieldset {
+    padding: 10px;
+}
+
+form fieldset p {
+    margin-top: 10px;
+}
+
+#form-name {
+    font-size: 200%;
+    color: aliceblue;
+    margin-top: 20px;
+}
+
+form select:not(#Alkatreszek) {
+    display: none;
+    margin-top: 10px;
+}
+
+#mennyiseg-valaszto {
+    display: none;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+#kisszallitas-p {
+    margin-top: 20px;
+}
