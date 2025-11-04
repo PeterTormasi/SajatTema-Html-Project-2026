@@ -4,17 +4,17 @@
 }
 
 body {
-    background: linear-gradient(180deg, #94c9ff, #0654a2);
+    background: #F9FAFB;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header {
-    background-color: lightslategray;
+    background-color: #111827;
     width: 100%;
     height: 100px;
     font-size: 150%;
-    border-bottom: 1px dotted black;
+    border-bottom: 1px dotted #2563EB;
 }
 
 #banner-content {
@@ -22,10 +22,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-a {
-    color: black;
 }
 
 a:hover:not(#header-link) {
@@ -50,27 +46,26 @@ header a {
 #dialog {
     float: left;
     width: 47.5%;
-    background-color: lightslategray;
-    border: 1px solid black;
-    border-radius: 10px;
+    background-color: #111827;
+    border: 1px solid #2563EB;
+    border-bottom: 10px solid #2563EB;
 }
 
 #dialog2 {
     float: right;
     width: 47.5%;
-    background-color: lightslategray;
-    border: 1px solid black;
-    border-radius: 10px;
+    background-color: #111827;
+    border: 1px solid #2563EB;
+    border-bottom: 10px solid #2563EB;
 }
 
 #dialog img,
 #dialog2 img {
-    background-color: whitesmoke;
+    background: linear-gradient(90deg, #F9FAFB, #111827);
     float: left;
     width: 60%;
     height: auto;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+
 }
 
 #szoveg {
@@ -104,20 +99,20 @@ header a {
 
 nav {
     margin-top: 30px;
-    background-color: lightslategray;
-    border-radius: 10px;
+    background-color: #111827;
+
     width: 25%;
     min-width: 250px;
     height: 1000px;
-    border: 1px solid black;
+    border: 1px solid #2563EB;
     float: left;
 }
 
 section {
     margin-top: 30px;
-    border: 1px solid black;
-    background-color: lightslategray;
-    border-radius: 10px;
+    border: 1px solid #2563EB;
+    background-color: #111827;
+
     width: 70%;
     min-width: 700px;
     height: 1000px;
@@ -127,12 +122,14 @@ section {
 article {
     width: 90%;
     height: 47.5%;
-    background-color: whitesmoke;
-    margin-top: 2.5%;
+    background-color: #6B7280;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px;
     overflow-y: auto;
+    color: #F9FAFB;
+
+    border-bottom: 10px solid #2563EB;
 }
 
 article h2 {
@@ -158,10 +155,10 @@ footer {
     width: 100%;
     height: 100px;
     margin-top: 60px;
-    background-color: lightslategray;
+    background-color: #111827;
     margin-bottom: 30px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid #2563EB;
+    border-bottom: 1px solid #2563EB;
     color: aliceblue;
 }
 
@@ -194,7 +191,7 @@ footer {
 {
     text-decoration: none;
     color: black;
-    border: 1px solid black;
+    border: 1px solid #2563EB;
     padding: 3px;
     display: block;
     text-align: center;
@@ -268,4 +265,12 @@ form button {
 
 #kisszallitas-p {
     margin-top: 20px;
+}
+
+a {
+    color: #3B82F6;
+}
+
+#table-art {
+    height: 97%;
 }

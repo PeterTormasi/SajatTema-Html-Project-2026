@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/sum.js" defer></script>
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            font-size: 125%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #F9FAFB;
+            padding: 20px 10px;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #3B82F6;
+            color: white;
+            text-align: center;
+        }
+
+        .table-container {
+            width: 650px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+
+        table tr:nth-child(2n-1) {
+            background-color: #111827;
+        }
+
+        table tr:hover {
+            background-color: cadetblue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="banner-content">
+            <a href="index.html" id="header-link">
+                <h1>Hardver Webshop</h1>
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <nav>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Fooldal</a></li>
+                    <li>
+                        <a href="#nogo">Alkatreszek</a>
+                        <ul>
+                            <li><a href="#nogo">Alaplap</a></li>
+                            <li><a href="#nogo">Videokartya</a></li>
+                            <li><a href="#nogo">Tapegyseg</a></li>
+                            <li><a href="#nogo">Processzor</a></li>
+                            <li><a href="#nogo">Gephaz</a></li>
+                            <li><a href="#nogo">Huto</a></li>
+                            <li><a href="#nogo">Tarhely</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="animation.html">CSS animáció</a></li>
+                    <li><a href="form.html">HTML űrlap</a></li>
+                    <li><a href="table.html">HTML táblázat</a></li>
+                    <li><a href="gallery.html">Képgaléria</a></li>
+                    <li><a href="media.html">Média</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+            <article id="table-art">
+                <h2>&#171;Alkatreszek&#187;</h2>
+                <div class="table-container">
+                    <table id="alkatresz-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Gyarto</th>
+                                <th>Nev</th>
+                                <th>Ar</th>
+                            </tr>
+                        </thead>
+                        <tbody id="alkatresz-table-body">
+                            <tr>
+                                <td>1</td>
+                                <td>AMD</td>
+                                <td>Ryzen 5 7600X</td>
+                                <td>70.000Ft</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>NZXT</td>
+                                <td>H5 Flow 2024</td>
+                                <td>35.000Ft</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>SAMSUNG</td>
+                                <td>980 1TB M.2</td>
+                                <td>40.000Ft</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>ARCTIC</td>
+                                <td>Liquid Freezer III 240</td>
+                                <td>30.000Ft</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>ASUS</td>
+                                <td>X870 MAX GAMING WIFI7</td>
+                                <td>100.000Ft</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>ASUS</td>
+                                <td>Rtx 4060</td>
+                                <td>125.000Ft</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>CORSAIR</td>
+                                <td>RM750x</td>
+                                <td>60.000Ft</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>CORSAIR</td>
+                                <td>VENGEANCE 32GB (2x16GB)</td>
+                                <td>65.000Ft</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Osszesen: </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </section>
+    </div>
+    <footer>
+        <div id="main-footer">
+            <div>
+                <h2>Partnereink</h2>
+                <p><a href="#nogo">Asus</a></p>
+                <p><a href="#nogo">MSI</a></p>
+            </div>
+            <div>
+                <h2>Üzleteink</h2>
+                <p><a href="#nogo">Zalaegerszeg, csikós u. 5</a></p>
+            </div>
+            <div>
+                <h2>ÁSZF</h2>
+                <p><a href="#nogo">Általános Szerződési Feltételek</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <h2>&#169; 2025/26 | All Rights Reserved</h2>
+</body>
+
+</html>
