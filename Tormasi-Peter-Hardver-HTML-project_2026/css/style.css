@@ -4,17 +4,28 @@
 }
 
 body {
-    background: #F9FAFB;
+    background: #ebedf2;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Inter', sans-serif;
+    color: #d9e3f6;
+}
+
+h1, h2 {
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 header {
-    background-color: #111827;
+    position: sticky;
+    top: 0;
+    z-index: 10;
     width: 100%;
     height: 100px;
     font-size: 150%;
-    border-bottom: 1px dotted #2563EB;
+    border-bottom: 1px solid #2563EB;
+    background: linear-gradient(90deg, #0a1a33, #132a50);
+    padding: 25px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
 #banner-content {
@@ -31,7 +42,7 @@ a:hover:not(#header-link) {
 header a {
     text-align: center;
     text-decoration: none;
-    color: whitesmoke;
+    color: #d9e3f6;
     margin: 0;
 }
 
@@ -41,12 +52,13 @@ header a {
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 60px;
 }
 
 #dialog {
     float: left;
     width: 47.5%;
-    background-color: #111827;
+    background: linear-gradient(145deg, #0a1224, #0f1d35);
     border: 1px solid #2563EB;
     border-bottom: 10px solid #2563EB;
 }
@@ -54,28 +66,37 @@ header a {
 #dialog2 {
     float: right;
     width: 47.5%;
-    background-color: #111827;
+    background: linear-gradient(145deg, #0a1224, #0f1d35);
     border: 1px solid #2563EB;
     border-bottom: 10px solid #2563EB;
 }
 
 #dialog img,
 #dialog2 img {
-    background: linear-gradient(90deg, #F9FAFB, #111827);
+    background: linear-gradient(90deg, #F9FAFB, #F9FAFB00);
     float: left;
     width: 60%;
     height: auto;
+    border-top-left-radius: 11px;
+    transition: 0.3s;
+}
 
+#dialog img:hover,
+#dialog2 img:hover {
+    transform: scale(1.03);
+    border-bottom-left-radius: 11px;
 }
 
 #szoveg {
     width: 38%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
     float: left;
-    color: aliceblue;
+    color: #d9e3f6;
     font-size: 125%;
     padding-left: 5px;
+    transform: translate(0, +50%);
 }
 
 #name {
@@ -98,9 +119,7 @@ header a {
 }
 
 nav {
-    margin-top: 30px;
-    background-color: #111827;
-
+    background: linear-gradient(145deg, #0a1224, #0f1d35);
     width: 25%;
     min-width: 250px;
     height: 1000px;
@@ -108,11 +127,70 @@ nav {
     float: left;
 }
 
-section {
-    margin-top: 30px;
-    border: 1px solid #2563EB;
-    background-color: #111827;
+nav a {
+    display: block;
+    padding: 12px 16px;
+    color: #d9e3f6;
+    background: #162744;
+    margin-bottom: 6px;
+    border-radius: 12px;
+    transition: 0.2s;
+    text-decoration: none;
+    border: 1px solid #213963;
+}
 
+#menu {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#menu li
+{
+    list-style-type: none;
+}
+
+#menu ul li a:hover
+{
+    background-color: #2563EB;
+    color: #d9e3f6;
+    transform: translateX(4px);
+}
+
+#menu ul ul a
+{
+    position: relative;
+    top: 100%;
+    left: 5%;
+    display: none;
+}
+
+#menu ul ul div {
+    position: relative;
+    float: left;
+    top: 100%;
+    transform: translateX(4px);
+    width: 5px;
+    height: 45px;
+    background-color: #2563EB;
+    border-radius: 10px;
+    display: none;
+}
+
+#menu ul li:hover > ul a
+{
+    display: flex;
+}
+
+#menu ul li:hover > ul div
+{
+    display: flex;
+}
+
+section {
+    border: 1px solid #2563EB;
+    background: linear-gradient(145deg, #0a1224, #0f1d35);
     width: 70%;
     min-width: 700px;
     height: 1000px;
@@ -121,15 +199,23 @@ section {
 
 article {
     width: 90%;
-    height: 47.5%;
-    background-color: #6B7280;
-    margin-top: 10px;
+    height: 44%;
+    padding: 1.85%;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     overflow-y: auto;
-    color: #F9FAFB;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(4px);
+    transition: 0.2s;
+}
 
-    border-bottom: 10px solid #2563EB;
+article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
 }
 
 article h2 {
@@ -155,11 +241,10 @@ footer {
     width: 100%;
     height: 100px;
     margin-top: 60px;
-    background-color: #111827;
+    background: linear-gradient(145deg, #0a1224, #0f1d35);
     margin-bottom: 30px;
     border-top: 1px solid #2563EB;
     border-bottom: 1px solid #2563EB;
-    color: aliceblue;
 }
 
 #main-footer {
@@ -173,48 +258,6 @@ footer {
     float: left;
     width: 33.33%;
     margin-top: 15px;
-}
-
-#menu {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-}
-
-#menu li
-{
-    list-style-type: none;
-}
-
-#menu ul li a
-{
-    text-decoration: none;
-    color: black;
-    border: 1px solid #2563EB;
-    padding: 3px;
-    display: block;
-    text-align: center;
-    background-color: whitesmoke;
-}
-
-#menu ul li a:hover
-{
-    background-color: deepskyblue;
-    color: white;
-}
-
-#menu ul ul a
-{
-    position: relative;
-    top: 100%;
-    background-color: lightgrey;
-    display: none;
-}
-
-#menu ul li:hover > ul a
-{
-    display: flex;
 }
 
 figure {
@@ -269,8 +312,52 @@ form button {
 
 a {
     color: #3B82F6;
+    transition: 0.2s;
 }
 
 #table-art {
-    height: 97%;
+    height: 93%;
+}
+
+.shadow {
+    background: #0d1b2e;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+#introduction { 
+    font-size: 32px;
+    border-left: 4px solid #2563EB;
+    border-right: 4px solid #2563EB;
+    padding: 5px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 6px rgba(77, 125, 255, 0.6);
+    background: linear-gradient(90deg, #2563EB, #2563EB);
+    background-repeat: no-repeat;
+
+    background-size: 0% 100%;  
+    background-position: center;   
+
+    transition: 0.8s ease;
+}
+
+#introduction:hover {
+    background-size: 100% 100%;
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #406cff;
+    border-radius: 8px;
+}
+
+#copyright-text {
+    color: #213963;
 }
