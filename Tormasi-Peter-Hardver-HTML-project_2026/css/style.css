@@ -4,7 +4,7 @@
 }
 
 body {
-    background: #ebedf2;
+    background: linear-gradient(0deg, #132a50, #ebedf2);
     text-align: center;
     font-family: 'Inter', sans-serif;
     color: #d9e3f6;
@@ -47,42 +47,68 @@ header a {
 }
 
 .container {
-    width: 1100px;
+    width: 1183px;
     display: inline-block;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+    height: 360px;
+    overflow: hidden;
+}
+
+#wrapper {
+    display: flexbox;
 }
 
 #dialog {
     float: left;
-    width: 47.5%;
+    width: 522.5px;
     background: linear-gradient(145deg, #0a1224, #0f1d35);
     border: 1px solid #2563EB;
     border-bottom: 10px solid #2563EB;
+    transition: 1s ease;
+    visibility: visible;
+    position: absolute;
+    transform: translateX(41.5px);
 }
 
 #dialog2 {
     float: right;
-    width: 47.5%;
+    width: 522.5px;
     background: linear-gradient(145deg, #0a1224, #0f1d35);
     border: 1px solid #2563EB;
     border-bottom: 10px solid #2563EB;
+    transition: 1s ease;
+    position: absolute;
+    transform: translateX(616.5px);
+}
+
+#dialog3 {
+    float: right;
+    width: 522.5px;
+    background: linear-gradient(145deg, #0a1224, #0f1d35);
+    border: 1px solid #2563EB;
+    border-bottom: 10px solid #2563EB;
+    transition: 1s ease;
+    position: absolute;
+    transform: translateX(1191px);
+    opacity: 0;
 }
 
 #dialog img,
-#dialog2 img {
-    background: linear-gradient(90deg, #F9FAFB, #F9FAFB00);
+#dialog2 img,
+#dialog3 img {
+    background: radial-gradient(#F9FAFB55, #F9FAFB33, #F9FAFB00, #F9FAFB00);
     float: left;
-    width: 60%;
-    height: auto;
+    height: 300px;
     border-top-left-radius: 11px;
     transition: 0.3s;
 }
 
 #dialog img:hover,
-#dialog2 img:hover {
+#dialog2 img:hover,
+#dialog3 img:hover {
     transform: scale(1.03);
     border-bottom-left-radius: 11px;
 }
@@ -96,19 +122,30 @@ header a {
     color: #d9e3f6;
     font-size: 125%;
     padding-left: 5px;
-    transform: translate(0, +50%);
+
 }
 
 #name {
     text-align: center;
     width: 100%;
-    margin-bottom: 10px;
+    height: 100px;
+    margin-top: 10px;
 }
 
 #description {
     text-align: left;
     width: 100%;
     font-size: 80%;
+    height: 100px;
+    display: flex;
+    align-items: last baseline;
+}
+
+#forras-szoveg {
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    height: 100px;
 }
 
 .container2{
@@ -163,7 +200,13 @@ nav a {
     position: relative;
     top: 100%;
     left: 5%;
-    display: none;
+    height: 0px;
+    visibility: hidden;
+    padding: 0 16px;
+    margin-bottom: 0;
+    border: none;
+    color: #00000000;
+    text-align: left;
 }
 
 #menu ul ul div {
@@ -172,20 +215,28 @@ nav a {
     top: 100%;
     transform: translateX(4px);
     width: 5px;
-    height: 45px;
+    height: 0px;
     background-color: #2563EB;
     border-radius: 10px;
-    display: none;
+    visibility: hidden;
+    transition: 0.2s;
 }
 
 #menu ul li:hover > ul a
 {
     display: flex;
+    height: 20px;
+    visibility: visible;
+    padding: 12px 16px;
+    border: 1px solid #213963;
+    margin-bottom: 6px;
+    color: #d9e3f6;
 }
 
 #menu ul li:hover > ul div
 {
-    display: flex;
+    visibility: visible;
+    height: 45px;
 }
 
 section {
@@ -239,10 +290,9 @@ article img {
 
 footer {
     width: 100%;
-    height: 100px;
+    height: 175px;
     margin-top: 60px;
     background: linear-gradient(145deg, #0a1224, #0f1d35);
-    margin-bottom: 30px;
     border-top: 1px solid #2563EB;
     border-bottom: 1px solid #2563EB;
 }
@@ -250,14 +300,21 @@ footer {
 #main-footer {
     width: 50%;
     min-width: 500px;
+    height: 100px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 }
 
 #main-footer div {
     float: left;
     width: 33.33%;
     margin-top: 15px;
+}
+
+#copyright-text {
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 figure {
@@ -356,8 +413,4 @@ a {
 ::-webkit-scrollbar-thumb {
     background: #406cff;
     border-radius: 8px;
-}
-
-#copyright-text {
-    color: #213963;
 }
