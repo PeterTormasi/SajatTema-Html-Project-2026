@@ -25,10 +25,10 @@ function setContent(container, item) {
 
 function renderCards() {
     if (index%3 == 0) {
-        container1.style.transform = `translateX(${41.5}px)`
+        container1.style.transform = `translateX(${0}px)`
         container1.style.opacity = "1"
 
-        container2.style.transform = `translateX(${616.5}px)`
+        container2.style.transform = `translateX(${575}px)`
         container2.style.opacity = "1"
 
         container3.style.opacity = "0"
@@ -42,25 +42,25 @@ function renderCards() {
         container1.style.transform = `translateX(${-575}px)`
         container1.style.opacity = "0"
 
-        container2.style.transform = `translateX(${41.5}px)`
+        container2.style.transform = `translateX(${0}px)`
         container2.style.opacity = "1"
 
         container3.style.opacity = "1"
-        container3.style.transform = `translateX(${616.5}px)`
+        container3.style.transform = `translateX(${575}px)`
 
         setContent(container1, cuccok[(counter-1)%cuccok.length])
         setContent(container2, cuccok[(counter)%cuccok.length])
         setContent(container3, cuccok[(counter+1)%cuccok.length])
     }
     else {
-        container1.style.transform = `translateX(${616.5}px)`
+        container1.style.transform = `translateX(${575}px)`
         container1.style.opacity = "1"
 
         container2.style.transform = `translateX(${-575}px)`
         container2.style.opacity = "0"
 
         container3.style.opacity = "1"
-        container3.style.transform = `translateX(${41.5}px)`
+        container3.style.transform = `translateX(${0}px)`
 
         setContent(container2, cuccok[(counter-1)%cuccok.length])
         setContent(container3, cuccok[(counter)%cuccok.length])
