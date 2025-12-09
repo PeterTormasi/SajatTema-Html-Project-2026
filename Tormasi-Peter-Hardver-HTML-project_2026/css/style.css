@@ -33,16 +33,19 @@ header {
 
 #search-box-div {
     display: inline-flex;
-
+    transform: translateY(-100px);
     align-items: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-
     border-radius: 22.5px;
     background: #0a1224;
     transition: opacity 0.5s;
     opacity: 0;
+}
+
+#search-box-div.visible {
+    transition: opacity 0s;
 }
 
 #search-box-div svg {
@@ -71,13 +74,16 @@ header {
     width: 550px;
 }
 
-
-
 #banner-content {
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.5s;
+}
+
+#banner-content.visble a {
+    pointer-events: none;
 }
 
 #banner-content h1 {
@@ -467,13 +473,14 @@ a {
 .gallery-div {
     margin-left: auto;
     margin-right: auto;
-    width: 735px;
+    width: 680px;
     height: 675px;
 }
 
 .gallery-div img {
-    height: 225px;
-    width: auto;
+    width: 220px;
+    height: auto;
+    
     transition: 0.5s;
     background: radial-gradient(#00000055, #00000055, #F9FAFB00, #F9FAFB00);
     margin-top: 10px;
@@ -494,4 +501,10 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
+}
+
+iframe {
+    padding: 10px;
+    margin-top: 175px;
+    margin-bottom: 175px;
 }
